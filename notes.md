@@ -26,3 +26,22 @@
     ```
 
     thats all. 
+
+- If you import a index file one of the in the folder like `api` you dont type the `index` after the folder name the js look firstly the index.js allready
+
+    `import { fetchData } from './api'` 
+
+    > fetchData the method existing inside of `./api/index.js`
+
+
+- Spacial notes about asynchronous functions especcialy `componentDidMount`
+
+    we type the async keyword right before the componentDidMount this is special stuvation becouse generally types befera the parantesies.   
+
+    ```javascript
+        async componentDidMount() {
+            const data = await fetchData();
+
+            console.log(data);
+        }
+    ```
