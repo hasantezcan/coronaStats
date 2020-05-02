@@ -1,14 +1,14 @@
-- What is the differences between `.js` and `.jsx` ? 
+- ## What is the differences between `.js` and `.jsx` ? 
 
     https://www.quora.com/In-ReactJS-what-is-the-difference-between-JS-and-JSX-for-a-filename?share=1
 
-- What is the `CSS modules` ?   
+- ## What is the `CSS modules` ?   
 
     https://css-tricks.com/css-modules-part-1-need/     
     https://www.sitepoint.com/understanding-css-modules-methodology/
     https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
 
-- New technique to import components.
+- ## New technique to import components.
 
     Import to component folder inside of `app.js`
     ```bash
@@ -45,3 +45,52 @@
             console.log(data);
         }
     ```
+
+- ## Destructing tip
+
+    If the all variable names is simillar. Like this 
+
+    ```js
+        import axios from 'axios';
+
+        const url = "https://covid19.mathdro.id/api";
+
+        export const fetchData = async () => {
+            try {
+                const { data: { confirmed, recovered, deaths, lastUpdate } } = await axios.get(url);
+                
+                const modifiedData = {
+                confirmed: confirmed,
+                recovered: recovered,
+                deaths: deaths,
+                lastUpdate: lastUpdate
+                };
+                
+                return modifiedData;
+            } catch (error) {
+                
+            }
+        }
+    ```
+
+    You can delete dublicate variable names. Because js will understand who is who.
+
+    ```js
+        import axios from 'axios';
+
+        const url = "https://covid19.mathdro.id/api";
+
+        export const fetchData = async () => {
+            try {
+                const { data: { confirmed, recovered, deaths, lastUpdate } } = await axios.get(url);
+                
+                const modifiedData = { confirmed, recovered, deaths, lastUpdate };
+                
+                return modifiedData;
+            } catch (error) {
+                
+            }
+        }
+    ```
+        
+    this syntax is easier to understand.
