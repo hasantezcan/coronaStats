@@ -1,0 +1,9 @@
+body {
+    background-color: rgba(250, 250, 250);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
