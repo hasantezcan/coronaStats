@@ -115,3 +115,14 @@
 
 - ## Material-UI
     https://material-ui.com/
+
+- ## import cx from 'classnames';
+
+    Used for multiple class fetching
+
+    ```js
+        import cx from 'classnames';
+        import styles from "./Cards.module.css";
+
+        <Grid item component={Card} xs={12} md={3} className={ cx(styles.card, styles.infected) }>
+    ```
