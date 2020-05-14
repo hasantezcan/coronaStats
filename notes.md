@@ -126,3 +126,15 @@
 
         <Grid item component={Card} xs={12} md={3} className={ cx(styles.card, styles.infected) }>
     ```
+
+- ## state usage functional vs class base components
+
+    ```js
+        // functional component
+        const [dailyData, setDailyData] = useState({});
+
+        // class base component
+        state = {
+            dailyData: {}
+        }
+    ```
