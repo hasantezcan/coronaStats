@@ -41,7 +41,20 @@ export const fetchCountries = async () => {
     try {
         const { data: { countries } } = await axios.get(`${url}/countries`);
 
-        return countries.map((country) => country.name);
+        return countries.map((country) => country);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+const countryURL = "https://restcountries.eu/rest/v2/alpha";
+
+export const fetchCountryData = async (country) => {
+    try {
+        const { data } = await axios.get(`${countryURL}/${country}`)
+        // console.log(data);
+        
+        return data;
     } catch (error) {
         console.log(error);
     }

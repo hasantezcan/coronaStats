@@ -1,0 +1,36 @@
+.card{
+    display: flex !important;
+    width: 81vh !important;
+}
+
+
+.flag {
+    object-fit: cover;
+    width: 24%;
+    height: 90px;
+
+    -webkit-box-shadow: 15px -2px 23px -15px rgba(0,0,0,0.68);
+    -moz-box-shadow: 15px -2px 23px -15px rgba(0,0,0,0.68);
+    box-shadow: 15px -2px 23px -15px rgba(0,0,0,0.68);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vh !important;
+}
+
+.capitalCity {
+    margin-top: -12px;
+}    
+
+@media (max-width: 770px) {
+    .card {
+        margin: 2% 0 !important;
+        width: 42vh !important;
+    }
+
+    .flag {
+        width: 37%;
+    }
+}
