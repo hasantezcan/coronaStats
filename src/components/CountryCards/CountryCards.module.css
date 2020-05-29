@@ -1,8 +1,8 @@
 .card{
     display: flex !important;
     width: 81vh !important;
+    height: 90px;
 }
-
 
 .flag {
     object-fit: cover;
@@ -15,9 +15,11 @@
 }
 
 .content {
+    height: 90px !important;
     display: flex;
     flex-direction: column;
     margin-left: 2vh !important;
+    justify-content: space-between;
 }
 
 .capitalCity {
@@ -27,7 +29,9 @@
 @media (max-width: 770px) {
     .card {
         margin: 2% 0 !important;
-        width: 42vh !important;
+        width: 46vh !important;
+        margin-top: -1vh !important;
+        margin-bottom: 6vh !important;
     }
 
     .flag {

@@ -138,3 +138,12 @@
             dailyData: {}
         }
     ```
+
+- ## add basic tooltip
+
+    ```html
+        <p title="tooltip text"> I am the thing </p>
+    ```
+
+    [soruce](http://www.javascriptkit.com/howto/toolmsg.shtml)
+    [advence tooltip](http://jsfiddle.net/8nnwytbL/)
