@@ -8,7 +8,7 @@
 }
 
 .infected {
-    border-bottom: 10px solid rgba(0, 109, 204, 0.8)
+    border-bottom: 10px solid rgba(0, 109, 204, 0.8);
 }
 
 .recovered {

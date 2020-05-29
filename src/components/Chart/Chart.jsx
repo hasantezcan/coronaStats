@@ -24,22 +24,20 @@ const Chart = ({ data: { confirmed, recovered, deaths },country }) => {
             datasets: [{
               data: dailyData.map(({ confirmed }) => confirmed),
               label: 'Infected',
-              borderColor: '#3333ff',
+              borderColor: 'rgba(0, 109, 204, 0.8)',
+              backgroundColor: 'rgba(0, 109, 204, 0.4)',
               fill: true,
             }, {
               data: dailyData.map(({ deaths }) => deaths),
               label: 'Deaths',
-              borderColor: 'red',
-              backgroundColor: 'rgba(255, 17, 16, 0.8)',
+              borderColor: 'rgba(255, 17, 16, 0.8)',
+              backgroundColor: 'rgba(255, 17, 16, 0.4)',
               fill: true,
             }],
           }}
         />) : null
   )
-
-  // console.log(confirmed, recovered, deaths);
   
-
   const barChart = (
     confirmed 
       ? (
