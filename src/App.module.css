@@ -1,5 +1,6 @@
 body {
     background-color: rgba(250, 250, 250);
+    background-image: radial-gradient(circle at center center, rgb(191, 240, 234),rgb(149, 214, 228),rgb(107, 188, 223),rgb(65, 162, 217),rgb(23, 136, 211));
 }
 
 .container {
@@ -10,8 +11,57 @@ body {
 }
 
 .logo {
-    width: 30vh;
+    width: 60vh;
     margin-top: 2vh;
+    transition:all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.logo:hover
+{
+    cursor: pointer;
+    opacity:2;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: brightness(1) invert(1);
+}
+
+.coronaVirus {
+    display: block;
+    position: absolute;
+    top: 0vh;
+    width: 20%;
+    z-index: -1;
+    filter: brightness(0) invert(1) opacity(0.8);
+    
+}
+
+@media (max-width:800px) { 
+    .logo:hover
+    {
+        transform: scale(1);
+        filter: none;
+    }
+ }
+
+.githubButton {
+  position: fixed;
+  display: block;
+  top: 7px;
+  right: 7px;
+  width: auto;
+  height: auto;
+  opacity:0.3;
+  transition:all 0.3s ease;
+}
+
+.githubButton:hover{
+    cursor: pointer;
+    opacity:1;
 }
 
 @media (max-width: 770px) {
@@ -20,5 +70,8 @@ body {
     }
     .logo {
         width: 100%;
+    }
+    .coronaVirus {
+        width: 50%;
     }
 }
