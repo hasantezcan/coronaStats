@@ -8,7 +8,7 @@ import styles from "./CountCard.module.css";
 const CountCard = ({ title, value, description, style, lastUpdate}) => {
 
     return (
-        <Grid item component={Card} xs={12} s={3} md={3} className={cx(styles.card, `${style}`)}>
+        <Grid item component={Card} xs={12} sm={3} md={3} className={cx(styles.card, `${style}`)}>
             <CardContent>
                 <Typography color="textSecondary" gutterBottom> {title} </Typography>
                 <Typography variant="h5">
