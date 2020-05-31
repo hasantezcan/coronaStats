@@ -2,6 +2,7 @@
     display: flex !important;
     width: 81vh !important;
     height: 90px;
+    margin-bottom: 15px;
 }
 
 .flag {
@@ -15,7 +16,7 @@
 }
 
 .content {
-    height: 90px !important;
+    height: 100% !important;
     display: flex;
     flex-direction: column;
     margin-left: 2vh !important;
@@ -28,10 +29,8 @@
 
 @media (max-width: 770px) {
     .card {
-        margin: 2% 0 !important;
-        width: 46vh !important;
-        margin-top: -1vh !important;
-        margin-bottom: 6vh !important;
+        width: 100% !important;
+        margin-bottom: 25px;
     }
 
     .flag {

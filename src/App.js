@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Cards, Chart, CountryPicker, CountryCards } from './components';
+import { Cards, Chart, CountryPicker, CountryCards, PopularCountryCards } from './components';
 import styles from './App.module.css';
 import GitHubButton from 'react-github-btn'
 
@@ -53,6 +53,7 @@ class App extends React.Component {
         <img className={styles.coronaVirus} src={coronaVirus} alt=""/>
         <img className={styles.logo} src={logo} alt="logo" onClick={this.reloadPage} />
         <CountryPicker className={styles.logo} handleCountryChange={this.handleCountryChange} />
+        <PopularCountryCards handleCountryChange={this.handleCountryChange}/>
         <CountryCards countryData={countryData} country={country} />
         <Cards data={data}/>
         <Chart data={data} country={country} />

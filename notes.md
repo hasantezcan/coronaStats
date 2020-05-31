@@ -147,3 +147,7 @@
 
     [soruce](http://www.javascriptkit.com/howto/toolmsg.shtml)
     [advence tooltip](http://jsfiddle.net/8nnwytbL/)
+
+- ## Awesome CSS backgroundes
+    https://www.gradientmagic.com/collection/standardcircle
+    [How they builded!](https://www.youtube.com/watch?v=muE2B0Zylbw)

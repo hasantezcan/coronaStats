@@ -1,9 +1,9 @@
 .container {
     margin: 50px 0;
+    margin-top: 10px;
 }
 
 .card {
-    /* margin: top-bottom left-right !important; expalanation underline*/
     margin: 0 2% !important;
 }
 
@@ -20,10 +20,10 @@
 }
 
 @media (max-width: 770px) {
+    .container {
+        margin-top: 0vh !important;
+    }
     .card {
         margin: 2% 0 !important;
-    }
-    .container {
-        margin-top: -2vh !important;
     }
 }
