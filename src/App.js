@@ -42,7 +42,7 @@ class App extends React.Component {
       <div className={styles.container}>
         <div className={styles.githubButton}>
           <GitHubButton 
-            href="https://github.com/hasantezcan/covid-19-report" 
+            href="https://github.com/hasantezcan/coronaStats/stargazers" 
             data-icon="octicon-star" 
             data-size="large" 
             data-show-count="true" 
