@@ -3,6 +3,7 @@
     width: 81vh !important;
     height: 90px;
     margin-bottom: 15px;
+    white-space: nowrap;
 }
 
 .flag {
